@@ -214,7 +214,6 @@ message.channel.sendEmbed(cat);
 
 
 client.on("message", async message => {
-var prefix = "-";
 var aoasm =[
     {q:"ما عاصمة **المغرب**",a:"الرباط"},
     {q:"ما عاصمة **افغانستان**",a:"كبل"},
