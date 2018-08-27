@@ -210,10 +210,6 @@ var cats = ["http://palestine-kitchen.ps/wp-content/uploads/2017/12/%D9%86%D9%83
 message.channel.sendEmbed(cat);
     }
 });
-
-
-
-
 var fkk =[
         {f:"فكك بسم الله الرحمن الرحيم",k:"ب س م ا ل ل ه ا ل ر ح م ن ا ل ر ح ي م"},
         {f:"فكك باص",k:"ب ا ص"},
