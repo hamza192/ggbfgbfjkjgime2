@@ -281,7 +281,7 @@ var aoasm =[
     {q:"ما عاصمة **البرازيل  **",a:"برازيليا"},
    ];
     if(message.content == prefix+"عواصم"){
-        if(UserBlocked.has(message.guild.id)) return message.channel.send("هناك جلسة .")
+        if(UserBlocked.has(message.guild.id)) return message.channel.send("chat")
         UserBlocked.add(message.guild.id)
         var ask = aoasm[Math.floor(Math.random() * aoasm.length)];
         let embed = new Discord.RichEmbed()
