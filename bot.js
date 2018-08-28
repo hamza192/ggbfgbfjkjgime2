@@ -408,7 +408,8 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 
-client.on('message' , message => {
+ client.on('message' , message => {
+  var prefix = "-";
   if(message.author.bot) return;
 
   if(message.content.startsWith(prefix + "tic")) {
@@ -471,8 +472,6 @@ client.on('message' , message => {
   }
 }
  });
-
-
 
 
 
