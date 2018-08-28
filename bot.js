@@ -30,6 +30,60 @@ client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
 
 
 
+ client.on("message", message => {
+	var prefix = "-";
+ if (message.content === "-help") {
+	  message.channel.send('**تم ارسالك في الخاص** :mailbox_with_mail: ');
+  const embed = new Discord.RichEmbed() 
+      .setColor("#000000")
+      .setDescription(`
+          اوامر الالعاب
+❖-rps ~ حجر ورقة مقص
+❖-tic ~xo
+❖-quas ~ اسئلة عامة
+❖-نكت ~ نكت 
+❖-لعبة كت تويت ~ كت تويت
+❖-roll <number> ~ قرعة
+❖-لعبة مريم ~ مريم
+❖-فوائد ونصائح  ~ هل تعلم
+❖-يعطيك عقابات قاسية ~ عقاب   
+  
+  قريبا العاب جديدة 
+  ! United Family.-`)
+   message.author.sendEmbed(embed)
+    
+   }
+   }); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 var Za7f = [
   "**صورة وجهك او رجلك او خشمك او يدك**.",
   "**اصدر اي صوت يطلبه منك الاعبين**.",
