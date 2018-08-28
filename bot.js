@@ -120,7 +120,7 @@ message.channel.sendEmbed(cat);
 
 
 client.on("message", function(message) {
-
+	var prefix = "-";
    if(message.content.startsWith(prefix + "rps")) {
     let messageArgs = message.content.split(" ").slice(1).join(" ");
     let messageRPS = message.content.split(" ").slice(2).join(" ");
@@ -159,7 +159,6 @@ reaction3.on("collect", r => {
     })
 }
 });
-
 
 
 
