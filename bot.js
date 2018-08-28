@@ -543,7 +543,9 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 
+
 client.on('message', message => {
+var prefix = "-";	
 if (!points[message.author.id]) points[message.author.id] = {
 	points: 0,
   };
@@ -576,7 +578,7 @@ msg.channel.send(`${item.type}`).then(() => {
 }
 });
 
-
+//Made By Jack
 
 
 client.on('message', message => {
@@ -593,7 +595,6 @@ if (message.content.startsWith(prefix + 'نقاطي')) {
     if (err) console.error(err)
   })
 });
-
 
 
 
