@@ -304,7 +304,29 @@ var fkk =[
 
 
 
-
+client.on('message', message => {
+   if (message.content === "-قرعة1") {
+  message.channel.sendMessage(Math.floor(Math.random() * 25));
+    }
+});
+ 
+client.on('message', message => {
+   if (message.content === "-قرعة2") {
+  message.channel.sendMessage(Math.floor(Math.random() * 50));
+    }
+});
+ 
+client.on('message', message => {
+   if (message.content === "-قرعة3") {
+  message.channel.sendMessage(Math.floor(Math.random() * 75));
+    }
+});
+ 
+client.on('message', message => {
+   if (message.content === "-قرعة4") {
+  message.channel.sendMessage(Math.floor(Math.random() * 100));
+    }
+});
 
 
 
