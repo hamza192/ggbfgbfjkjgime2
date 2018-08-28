@@ -250,7 +250,7 @@ var fkk =[
    client.on("message", async message => {
 	   var prefix = "-";
     if(message.content == prefix+"فكك"){
-        if(UserBlocked.has(message.guild.id)) return message.channel.send("** This command only for servers**")
+        if(UserBlocked.has(message.guild.id)) return message.channel.send("chat")
         UserBlocked.add(message.guild.id)
         var ask = fkk[Math.floor(Math.random() * fkk.length)];
         let embed = new Discord.RichEmbed()
@@ -353,113 +353,70 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 
-  client.on("message", async message => {
-var prefix = "-";
-var aoasm =[
-    {q:"ما عاصمة **المغرب**",a:"الرباط"},
-    {q:"ما عاصمة **افغانستان**",a:"كبل"},
-    {q:"ما عاصمة ** البانيا**",a:"تيران"},
-    {q:"ما عاصمة **الجزائر **",a:"الجزائر"},
-    {q:"ما عاصمة ** **",a:"الجزائر"},
-    {q:"ما عاصمة **اندورا لا فيلا **",a:"اندورا"},
-    {q:"ما عاصمة **انجولا**",a:"لواندا"},
-    {q:"ما عاصمة **انتيجوا وباربودا**",a:"سان جونز"},
-    {q:"ما عاصمة **الارجنتين**",a:"بوينس ايرس"},
-    {q:"ما عاصمة **ارمينيا**",a:"يريفان"},
-    {q:"ما عاصمة ** مصر**",a:"القاهرة"},
-    {q:"ما عاصمة ** استراليا**",a:"كانبرا"},
-    {q:"ما عاصمة **النمسا**",a:"فيينا"},
-    {q:"ما عاصمة ** اذربيجان**",a:"باكو"},
-    {q:"ما عاصمة **جزر البهاما**",a:"ناساو"},
-    {q:"ما عاصمة **البحرين**",a:"المنامة"},
-    {q:"ما عاصمة ** بنجلاد��ش**",a:"دكـا"},
-    {q:"ما عاصمة **باربادوس **",a:"بريدجتاون"},
-    {q:"ما عاصمة **بيلا روسيا**",a:"مينسك"},
-    {q:"ما عاصمة ** بلجيكا**",a:"بروكسل"},
-    {q:"ما عاصمة ** بيليز**",a:"بلوم بان"},
-    {q:"ما عاصمة ** بنين**",a:"بورتو نوفو"},
-    {q:"ما عاصمة ** بوتان**",a:"ثيمفو"},
-    {q:"ما عاصمة **بوليفيا **",a:"لاباز"},
-    {q:"ما عاصمة ** البوسنة والهرسك**",a:"سراييفو"},
-    {q:"ما عاصمة ** بوتسوانا**",a:"جابورون"},
-    {q:"ما عاصمة ** البرازيل**",a:"برازيليا"},
-    {q:"ما عاصمة ** بروناى**",a:"بندر سرى بيجاوان"},
-    {q:"ما عاصمة ** بلغاريا**",a:"صوفيا"},
-    {q:"ما عاصمة ** بوركينا فاسو**",a:"واجادوجو"},
-    {q:"ما عاصمة **بوروندى **",a:"بوجومبورا"},
-    {q:"ما عاصمة **كمبوديا **",a:"بنوم بنـه"},
-    {q:"ما عاصمة ** الكاميرون**",a:"ياوندى"},
-    {q:"ما عاصمة ** كندا**",a:"اوتاوا"},
-    {q:"ما عاصمة ** الرأس الاخضر**",a:"برايا"},
-    {q:"ما عاصمة **تشاد **",a:"نجامينا"},
-    {q:"ما عاصمة ** شيلى**",a:"سانتياجو"},
-    {q:"ما عاصمة **الصين **",a:"بكين"},
-    {q:"ما عاصمة ** **",a:"مورونى"},
-    {q:"ما عاصمة **كوستاريكا **",a:"سان خوسيه"},
-    {q:"ما عاصمة ** كوت ديفوار**",a:"ابيدجان"},
-    {q:"ما عاصمة **كرواتيا **",a:"زغرب"},
-    {q:"ما عاصمة ** كوبا**",a:"هافانا"},
-    {q:"ما عاصمة ** قبرص**",a:" "},
-    {q:"ما عاصمة ** جمهورية التشيك**",a:"براغ"},
-    {q:"ما عاصمة **الدنمارك **",a:"كوبنهاجن"},
-    {q:"ما عاصمة ** جيبوتى**",a:"جيبوتى"},
-    {q:"ما عاصمة ** دومينيكا**",a:"روسيو"},
-    {q:"ما عاصمة **الدومينيكان **",a:"سان دومينجو"},
-    {q:"ما عاصمة **تيمور الشرقية **",a:"ديلى"},
-    {q:"ما عاصمة **قطر  **",a:"الدوحة"},
-    {q:"ما عاصمة **السعودية  **",a:"الرياض"},
-    {q:"ما عاصمة **سوريا  **",a:"دمشق"},
-    {q:"ما عاصمة **تركيا  **",a:"انقرة"},
-    {q:"ما عاصمة **العراق  **",a:"بغداد"},
-    {q:"ما عاصمة **البنان  **",a:"بيروت"},
-    {q:"ما عاصمة **فلسطين  **",a:"القدس"},
-    {q:"ما عاصمة **امريكا  **",a:"واشنطن"},
-    {q:"ما عاصمة **الاردن  **",a:"عمان"},    
-    {q:"ما عاصمة **السودان  **",a:"خرطوم"},
-    {q:"ما عاصمة **الما��يا  **",a:"برلين"},
-    {q:"ما عاصمة **كندا  **",a:"اوتاوا"},
-    {q:"ما عاصمة **البرازيل  **",a:"برازيليا"},
-   ];
-    if(message.content == prefix+"عواصم"){
-        if(UserBlocked.has(message.guild.id)) return message.channel.send("chat")
-        UserBlocked.add(message.guild.id)
-        var ask = aoasm[Math.floor(Math.random() * aoasm.length)];
-        let embed = new Discord.RichEmbed()
-        .setTitle('سؤال عواصم')
-        .setAuthor(message.author.username, message.author.avatarURL)
-        .setColor("RANDOM")
-        .setDescription(ask.q);
-        message.channel.sendEmbed(embed).then(msg=> msg.delete(20000))
-        const msgs = await message.channel.awaitMessages(msg => msg.author.id !== client.user.id ,{maxMatches:1,time:10000});
-            UserBlocked.delete(message.guild.id)
-        msgs.forEach(result => {
-           if(result.author.id == client.user.id) return;
-           if(result.content == "عاصمة") return
-           if(result.content == ask.a){
-             let embeds = new Discord.RichEmbed()
-             .setTitle(':white_check_mark: اجابة صحيحة')
-             .setAuthor(message.author.username, message.author.avatarURL)
-             .setColor("RANDOM")
-             .setDescription(`**${result.author.username}** الإجابة صحيحة`);
-                message.channel.sendEmbed(embeds);                return;
-           } else {
+client.on('message' , message => {
+  var prefix = "/";
+  if(message.author.bot) return;
 
-                                  var embedx = new Discord.RichEmbed()
-                .setTitle(':x:خطاء')
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setColor("RANDOM")
-                .setDescription(`**${result.author.username}** الإجابة خاطئة`);
-                message.channel.sendEmbed(embedx);
-           }
-     });
+  if(message.content.startsWith(prefix + "tic")) {
+ let array_of_mentions = message.mentions.users.array();
+  let symbols = [':o:', ':heavy_multiplication_x:'] 
+  var grid_message;
+
+  if (array_of_mentions.length == 1 || array_of_mentions.length == 2) {
+    let random1 = Math.floor(Math.random() * (1 - 0 + 1)) + 0;
+    let random2 = Math.abs(random1 - 1); 
+    if (array_of_mentions.length == 1) {
+      random1 = 0;
+      random2 = 0;
+    }
+    let player1_id = array_of_mentions[random1].id;
+    let player2_id = array_of_mentions[random2].id;
+    var turn_id = player1_id;
+    var symbol = symbols[0];
+    let initial_message = `Game match between <@${player1_id}> and <@${player2_id}>!`;
+    if (player1_id == player2_id) {
+      initial_message += '\n_(What a loser, playing this game with yourself :joy:)_'
+    }
+    message.channel.send(`Tic-tac-toe! ${initial_message}`)
+    .then(console.log("Successful tictactoe introduction"))
+    .catch(console.error);
+    message.channel.send(':one::two::three:' + '\n' +
+                         ':four::five::six:' + '\n' +
+                         ':seven::eight::nine:')
+    .then((new_message) => {
+      grid_message = new_message;
+    })
+    .then(console.log("Successful tictactoe game initialization"))
+    .catch(console.error);
+    message.channel.send('Loading... Please wait for the :ok: reaction.')
+    .then(async (new_message) => {
+      await new_message.react('1⃣');
+      await new_message.react('2⃣');
+      await new_message.react('3⃣');
+      await new_message.react('4⃣');
+      await new_message.react('5⃣');
+      await new_message.react('6⃣');
+      await new_message.react('7⃣');
+      await new_message.react('8⃣');
+      await new_message.react('9⃣');
+      await new_message.react('🆗');
+      await new_message.edit(`It\'s <@${turn_id}>\'s turn! Your symbol is ${symbol}`)
+      .then((new_new_message) => {
+        require('./alpha.js')(client, message, new_new_message, player1_id, player2_id, turn_id, symbol, symbols, grid_message);
+      })
+      .then(console.log("Successful tictactoe listener initialization"))
+      .catch(console.error);
+    })
+    .then(console.log("Successful tictactoe react initialization"))
+    .catch(console.error);
   }
-});
-
-
-
-
-
-
+  else {
+    message.reply(`_Beldum Beldum_ :anger: \`(Use it like this: ${prefix}tictactoe @player1 @player2)\``)
+    .then(console.log("Successful error reply"))
+    .catch(console.error);
+  }
+}
+ });
 
 
 
