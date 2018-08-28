@@ -567,7 +567,7 @@ client.on('message', message => {
     fs.writeFile('points.json', JSON.stringify(points), (err) => {
         if (err) console.error(err);
     })
-  if (message.content == "$عواصم") {
+  if (message.content == "-عواصم") {
         var x = ['اليمن', 'مصر', 'الجزائر', 'السعودية', 'الصومال', 'العراق' , 'الامارات' , 'سوريا'];
         var x2 = ['صنعاء', 'القاهرة', 'الجزائر', 'الرياض', 'الخرطوم', 'بغداد', 'ابو ظبي','دمشق '];
         var x3 = Math.floor(Math.random()*x.length)
@@ -593,7 +593,7 @@ client.on('message', message => {
     fs.writeFile('point.json', JSON.stringify(points), (err) => {
         if (err) console.error(err);
     })
-    if (message.content == "$لغز") {
+    if (message.content == "-لغز") {
         var x = ['كلي ثقوب ومع ذلك أحفظ الماء فمن أكون ؟', 'ما هو الشيء الذي يمشي و يقف وليس له أرجـل ؟', 'ما هو الشئ الذي يرفع اثقال ولا يقدر يرفع مسمار ؟', 'يسمع بلا أذن ويتكلم بلا لسان فما هو ؟', 'ماهو الشيء الذي يكتب و لا يقرأ ؟', 'ماهو الشيء الذي يكون اخضر في الارض واسود في السوق واحمــر في البيت ؟', 'عائلة مؤلفة من 6 بنات وأخ لكل منهن، فكم عدد أفراد العائلة ؟', 'يتحرك دائماً حواليك لكنك لاتراه فما هو ؟' ,'ما هو البليون ؟'];
         var x2 = ['الاسفنج', 'الساعة', 'البحر', 'التلفون', 'العمر', 'الشاي', 'سبعة اشخاص' ,'الهواء' ,'الف مليون'];
         var x3 = Math.floor(Math.random()*x.length)
@@ -619,7 +619,7 @@ client.on('message', message => {
     fs.writeFile('point.json', JSON.stringify(points), (err) => {
         if (err) console.error(err);
     })
-  if (message.content == "$تحدي") {    
+  if (message.content == "-تحدي") {    
         var x = ['ف ض ع د', 'ص ش خ', 'ة د ا ر ج', 'ا ر ي ة س', 'ي ت ب', 'ئ ا ع ل ة', ' ا ش ي', 'ن ح و ي ا', 'س د و ي ك ر د', 'ر ط ي ا ة' , 'ن ح ز ل و'];
         var x2 = ['ضفدع', 'شخص', 'دراجة', 'سيارة', 'بيت', 'عائلة', 'شاي', 'حيوان', 'ديسكورد', 'طيارة', 'حلزون'];
         var x3 = Math.floor(Math.random()*x.length)
