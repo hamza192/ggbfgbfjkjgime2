@@ -542,7 +542,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 
-var prefix = "-";
+
 client.on('message', message => {
 if (!points[message.author.id]) points[message.author.id] = {
 	points: 0,
