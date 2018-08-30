@@ -543,32 +543,7 @@ const cuttweet = [     'كت تويت ‏| تخيّل لو أنك سترسم ش�
 
 
 
-let points = {};
-const type = [
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298994078810127/a90c6b270eb8bb2e.png",
-        "answers": ["البرازيل"]
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298996385677312/93b0c6f963ca78cc.png",
-        "answers": ["السعودية"]
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298996130086934/341960d3e3e1daad.png",
-        "answers": ["القسطنطينية"]
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298998172450816/5c70f0d2a02f741a.png",
-        "answers": ["النهاية"]
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429298999799971860/00c3e44857da1d4f.png",
-        "answers": ["امازون"]
-    },
-    {
-            "type": "https://cdn.discordapp.com/attachments/429298913980317696/429299000026595338/56ca5f3803361aaf.png",
-        "answers": ["جافاسكربت"]
-    },
+
 client.on("message", async message => {
 var prefix = "!";
 var aoasm =[
